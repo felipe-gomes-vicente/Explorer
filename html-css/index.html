@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML e CSS Introdução</title>
-</head>
-<body>
-  <!-- Exemplo de tag no HTML que não aparece na pagina web, pode ser utilizado para comentário ou obs em seu cóigo -->
-  <h1>HTML</h1>
-  <p>Aprendendo HTML</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML e CSS Introdução</title>
+    <style>
+      h2#unico {
+        margin-left: 40px;
+        color: red;
+      }
 
-  <!-- Tag ancora pra acessar um link -->
-  <a href="https://app.rocketseat.com.br" target="_blank" rel="noopener noreferrer">Ir até a Rocketseat com esse link</a>
-</body>
+      p.interno {
+        color: rgb(238, 130, 238);
+        font-weight: bold;
+      }
+      /* exemplo de comentario em CSS */
+    </style>
+  </head>
+  <body>
+    <!-- Exemplo de tag no HTML que não aparece na pagina web, pode ser utilizado para comentário ou obs em seu cóigo -->
+    <h1>HTML</h1>
+    <p>Aprendendo HTML</p>
+
+    <!-- Tag ancora pra acessar um link com atributo target="_blank" que ao clicar abre uma nova guia -->
+    <a
+      href="https://app.rocketseat.com.br"
+      target="_blank"
+      rel="noopener noreferrer"
+      >Ir até a Rocketseat com esse link</a
+    >
+
+    <!-- Estilo com CSS -->
+    <h2 id="unico">Aprendendo CSS e peso de classes e id's</h2>
+    
+    <p class="interno">CSS interno e classe</p>
+
+    <p class="interno">CSS classes</p>
+
+    <span 
+      style="color: #080; font-size: 32px;"
+    >
+      Texto com formatação CSS inline
+    </span>
+  </body>
 </html>
