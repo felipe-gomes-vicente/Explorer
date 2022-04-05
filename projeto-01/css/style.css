@@ -3,6 +3,12 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+#hero {
+  width: 592px;
+  margin: auto;
 }
 
 h1 {
@@ -16,10 +22,12 @@ h1 span {
   font-weight: bold;
 }
 
+span, a {
+  color: #F90;
+}
+
 p {
   color: #7D7987;
 }
 
-span, a {
-  color: #F90;
-}
+
