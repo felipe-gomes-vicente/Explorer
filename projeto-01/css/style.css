@@ -31,14 +31,23 @@ span, a {
   color: #F90;
 }
 
-p {
+p, footer {
   color: #7D7987;
 
   font-size: 14px;
   line-height: 28px;
+
 }
 
 /* vai pegar a margem esquerda do elemento anterior do <a>*/
 footer a + a {
   margin-left: 28px; 
+  
+}
+
+.line {
+  width: 568px;
+  height: 0;
+  margin: 0 auto 8px;
+  border: 1px solid #ECEFF2;
 }
