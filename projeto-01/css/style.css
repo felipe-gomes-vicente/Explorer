@@ -4,11 +4,16 @@
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  margin: 0;
 }
 
 #hero {
   width: 592px;
-  margin: auto;
+  margin: 0 auto 72px; /* topo os lados e base */
+}
+
+#hero img {
+  margin-bottom: 72px;
 }
 
 h1 {
@@ -33,4 +38,7 @@ p {
   line-height: 28px;
 }
 
-
+/* vai pegar a margem esquerda do elemento anterior do <a>*/
+footer a + a {
+  margin-left: 28px; 
+}
