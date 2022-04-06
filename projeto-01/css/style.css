@@ -40,6 +40,7 @@ p, footer {
 }
 
 /* vai pegar a margem esquerda do elemento anterior do <a>*/
+
 footer a + a {
   margin-left: 28px; 
   
@@ -50,4 +51,10 @@ footer a + a {
   height: 0;
   margin: 0 auto 8px;
   border: 1px solid #ECEFF2;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
