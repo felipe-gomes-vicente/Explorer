@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .page {
@@ -9,6 +15,7 @@
   margin: 65px auto 0;
 }
 
+/* NavBar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -23,5 +30,54 @@ ul {
   padding: 0;
   gap: 48px;
   list-style: none;
+}
 
+a {
+  color: #1F1534;
+  text-decoration: none;
+}
+
+/* pseudo-class */
+ul li a:hover {
+  font-weight: bold;
+}
+
+h1, ul {
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Main Section */
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: normal;
+}
+
+h1 span {
+  color: #89C5CC;
+  font-weight: bold;
+}
+
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+}
+
+section button {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+  line-height: 28px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer a {
+  font-weight: bold;
 }
