@@ -8,12 +8,18 @@ ul {
   list-style: none;
 }
 
+:root {
+  font-size: 62.5%; /* 10px */
+}
+
 body {
   background: #ECE9FD;
-  padding: 60px 23px 66px;
+  font-size: 1.6rem;
+  padding: 6rem 2.3rem 6.6rem;
 }
 
 h1 {
   font-family: 'Epilogue', sans-serif;
-  font-size: 40px;
+  font-size: 4rem;
+  line-break: 4.8rem;
 }
