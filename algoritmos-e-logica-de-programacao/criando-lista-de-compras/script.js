@@ -4,7 +4,7 @@
   Após capturar os 10 items, imprima-os, separando por vírgula.
 */
 
-// Códio da aula
+// Códido da aula
 let items = [];
 
 for(let item = 0; item <= 10; item++) {
@@ -17,7 +17,7 @@ alert(items)
 
 
 /**
- * Meu códio antes de aula
+ * Meu códido antes de aula
  * 
 alert("Informe 10 itens para lista de compras do supermercado");
 let itemList1 = prompt("Primeiro item");
