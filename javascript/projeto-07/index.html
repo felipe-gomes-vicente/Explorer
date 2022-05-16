@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,10 +15,28 @@
 
     <div id="app"></div>
 
-    <script src="">
+    <script>
+
+      const routes = {
+        "/": "/pages/home.html",
+        "/about": "/pages/about.html",
+        "/contact": "/pages/contact.html",
+        404: "/pages/404.html"
+      }
+      
       function route(event) {
         event = event || window.event
         event.preventDefault()
+
+        window.history.pushState({}, "", event.target.href)
+
+        handle()
+      }
+
+      function handle() {
+        const { pathname } = window.location
+
+        console.log(pathname)
       }
     </script>
   </body>
