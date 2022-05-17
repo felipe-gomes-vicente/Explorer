@@ -7,7 +7,7 @@ export class Favorites {
   }
 
   load() {
-    const entries = JSON.parse(localStorage.getItem
+     this.entries = JSON.parse(localStorage.getItem
     ("@github-favorites:")) || []  
   }
 
