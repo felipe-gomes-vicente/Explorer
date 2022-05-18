@@ -19,8 +19,6 @@ export class Favorites {
   constructor(root) {
     this.root = document.querySelector(root)
     this.load()
-
-    GithubUser.search("diego3g").then(user => console.log(user))
   }
 
   load() {
@@ -28,10 +26,25 @@ export class Favorites {
     ("@github-favorites:")) || []  
   }
 
-  async add(username) {
-    const user = await GithubUser.search(username)
+  save() {
+    localStorage.setItem("@github-favorites:", JSON.stringify(this.entries))
+  }
 
-    console.log(user)
+  async add(username) {
+    try {
+      const user = await GithubUser.search(username)
+
+      if(user.login === undefined) {
+        throw new Error("Usuário não encontrado!")
+      }
+
+      this.entries = [user, ...this.entries]
+      this.update()
+      this.save()
+
+    } catch(error) {
+      alert(error.message)
+    }
   }
 
   delete(user) {
@@ -40,6 +53,7 @@ export class Favorites {
 
       this.entries = filteredEntries
       this.update()
+      this.save()
   }
 }
 
