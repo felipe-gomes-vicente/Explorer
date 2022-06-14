@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header";
+import { ButtonText } from "../../components/ButtonText";
 
 import {  Container, Brand, Menu, Search, Content, NewNote } from "./styles";
 
@@ -12,7 +13,9 @@ export function Home() {
       <Header />
 
       <Menu>
-
+        <li><ButtonText title="Todos" /></li>
+        <li><ButtonText title="React" /></li>
+        <li><ButtonText title="Nodejs" /></li>
       </Menu>
 
       <Search>
