@@ -24,7 +24,7 @@ export const Container = styled.div`
 
 export const Form = styled.form`
   max-width: 340px;
-  margin: 84px auto 0;
+  margin: 30px auto 0;
 
   > div:nth-child(4) {
     margin-top: 24px;
@@ -33,7 +33,7 @@ export const Form = styled.form`
 
 export const Avatar = styled.div`
   position: relative;
-  margin: -180px auto 32px;
+  margin: -120px auto 32px;
 
   width: 186px;
   height: 186px;
