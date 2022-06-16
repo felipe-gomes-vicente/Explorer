@@ -9,6 +9,17 @@ export const Container = styled.div`
   grid-template-areas: 
   "header"
   "content";
+
+  > main {
+    grid-area: content;
+    overflow-y: auto;
+  }
+
+  .tags {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Form = styled.form`
