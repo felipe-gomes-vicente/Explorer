@@ -1,14 +1,15 @@
 import { useState, useEffect } from 'react';
-
 import { useParams, useNavigate } from 'react-router-dom';
-import { Container, Links, Content } from './styles';
+
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
-import { ButtonText } from '../../components/ButtonText';
-
 import { Section } from '../../components/Section';
 import { Tag } from '../../components/Tag';
+import { ButtonText } from '../../components/ButtonText';
+
 import { api } from '../../services/api';
+
+import { Container, Links, Content } from './styles';
 
 export function Details() {
   const [data, setData] = useState(null);
@@ -53,7 +54,7 @@ export function Details() {
             {data.links && (
               <Section title="Links úteis">
                 <Links>
-                  {data.links.map((link) => (
+                  {data.links.map(link => (
                     <li key={String(link.id)}>
                       <a href={link.url} target="_blank">
                         {link.url}
@@ -66,7 +67,7 @@ export function Details() {
 
             {data.tags && (
               <Section title="Marcadores">
-                {data.tags.map((tag) => (
+                {data.tags.map(tag => (
                   <Tag key={String(tag.id)} title={tag.name} />
                 ))}
               </Section>
